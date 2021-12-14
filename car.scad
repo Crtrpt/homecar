@@ -2,16 +2,13 @@ use  <./components/frame.scad>;
 use  <./components/wheel.scad>;
 use  <./components/shaft.scad>;
 use  <./components/scaffold.scad>;
-use <./components/battery.scad>
-use <./components/motor.scad>
-
-
-
-translate([0,0,3])
+use  <./components/battery.scad>
+use  <./components/motor.scad>
 
 //车架
+translate([0,0,3])
 frame(20,40);
-
+//电源
 translate([0,0,2])
 battery();
 
